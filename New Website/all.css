@@ -1,0 +1,96 @@
+/*General body and header styles*/
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #fff0f0; /*Light red background*/
+  color: #330000; /*Dark red text*/
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s;
+}
+
+header {
+  background-color: #ff647f; /* Rich Valentine red */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 2s ease-out;
+  border-bottom: 3px solid #ffcccb; /* Light pink */
+}
+
+/* Animation for fading in elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styling for categories and summaries */
+.category,
+.heading {
+  font-size: 20px;
+  text-transform: none;
+  margin: 10px 0;
+  padding-left: 20px;
+  border-left: 5px solid #ff647f; /* Valentine red */
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Details and paragraph text animation */
+details {
+  background-color: #ffe5e5; /* Very light red */
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffcccb; /* Light pink */
+  transition: all 0.3s;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #ff647f; /* Dark pink/red */
+}
+
+/* Hover effect for details */
+details:hover {
+  background-color: #ffcccc; /* Lighter red */
+  border-color: #ff647f; /* Rich Valentine red */
+}
+
+/* Text open class styling without any animations */
+.textopen {
+  font-size: 16px;
+  color: #660000; /* Deep red */
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .category,
+  .heading {
+    font-size: 18px;
+  }
+
+  .textopen {
+    font-size: 14px;
+  }
+}

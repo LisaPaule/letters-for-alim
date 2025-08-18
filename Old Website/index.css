@@ -1,0 +1,241 @@
+/* General body and header styles */
+body {
+  font-family: Inter, "Times New Roman", Times, serif;
+  background-color: #fff0f0; /* Light red background */
+  color: #330000; /* Dark red text */
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+header {
+  background-color: #ff647f; /* Rich Valentine red */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 2s ease-out;
+  border-bottom: 3px solid #ffcccb; /* Light pink */
+}
+
+/* Animation for fading in elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.link {
+  background-color: #ff647f;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+  background-color: #660000;
+}
+
+/* Styling for categories and headings */
+.category,
+.heading {
+  font-size: 20px;
+  text-transform: none;
+  margin: 10px 0;
+  padding-left: 20px;
+  border-left: 5px solid #ff647f; /* Valentine red */
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Details and paragraph text animation */
+details {
+  background-color: #ffe5e5; /* Very light red */
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffcccb; /* Light pink */
+  transition: all 0.3s;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #ff647f; /* Dark pink/red */
+}
+
+/* Hover effect for details */
+details:hover {
+  background-color: #ffcccc; /* Lighter red */
+  border-color: #ff647f; /* Rich Valentine red */
+}
+
+/* Text open class styling without any animations */
+.textopen {
+  font-size: 16px;
+  color: #660000; /* Deep red */
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.open-title {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  color: darkred;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .container,
+  .category,
+  .heading,
+  .textopen {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .link {
+    width: 100%;
+  }
+
+  .category,
+  .heading {
+    font-size: 18px;
+  }
+
+  .textopen {
+    font-size: 14px;
+  }
+}
+
+.first-letter {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.second-letter {
+  margin-top: 50px; /* SPACE between the first and second letters */
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Optional fadeInUp animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.third-letter {
+  margin-top: 50px; /* SPACE between the first and second letters */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.fourth-letter {
+  margin-top: 50px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fifth-letter {
+  margin-top: 50px; /* SPACE between the first and second letters */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.sixth-letter {
+  margin-top: 50px; /* SPACE between the first and second letters */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
