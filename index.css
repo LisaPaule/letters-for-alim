@@ -21,6 +21,7 @@ body {
   padding: 0;
   transition: background-color 0.5s;
   animation: fadeInUp 1.5s ease-out forwards;
+  overflow-x: hidden;
 }
 
 /* Animations */
@@ -46,6 +47,7 @@ body {
 .intention {
   margin-top: 0.5rem;
   font-size: 1.1rem;
+  padding: 1.5rem;
 }
 
 /* Container */
